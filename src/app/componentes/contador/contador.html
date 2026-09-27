@@ -1,9 +1,9 @@
-<div class="contenedor">
-  <h1>Contador</h1>
-  <h2>{{ contador() }}</h2>
+<div class="contador-container">
+  <!-- El Signal LLEVA PARÉNTESIS () para mostrar el valor actual -->
+  <h1>Valor: {{ contador() }}</h1>
 
   <div class="botones">
-    <button class="restar" (click)="restar()">-</button>
-    <button class="sumar" (click)="sumar()">+</button>
+    <button (click)="sumar()">+1</button>
+    <button (click)="restar()">-1</button>
   </div>
 </div>
