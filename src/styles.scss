@@ -1,32 +1,62 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e9ecef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
 }
 
 .card {
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
-}
+  box-sizing: border-box;
 
-button {
-  background-color: #5b2c6f;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 18px;
-  border-radius: 6px;
-  cursor: pointer;
+  h2 {
+    color: #1a1a1a;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
 
-  &:hover {
-    background-color: #4a235a;
+  .valor {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 20px 0 30px 0;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    button {
+      background-color: #4f46e5;
+      color: #ffffff;
+      border: none;
+      padding: 12px 28px;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background-color: #4338ca;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
   }
 }
