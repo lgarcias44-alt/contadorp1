@@ -4,7 +4,7 @@ import { Contador } from './componentes/contador/contador';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Contador],
+  imports: [Contador],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
